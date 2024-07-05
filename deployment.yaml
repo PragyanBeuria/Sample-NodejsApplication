@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejswebapp-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nodejswebapp
+  template:
+    metadata:
+      labels:
+        app: nodejswebapp
+    spec:
+      containers:
+      - name: nodejswebapp
+        image: appresistry.azurecr.io/nodejswebapp:latest
+        ports:
+        - containerPort: 3000
+        resources:
+          requests:
+            cpu: "500m" # 0.5 CPU
+            memory: "512Mi" # 512 MiB memory
+          limits:
+            cpu: "1000m" # 1 CPU
+            memory: "1024Mi" # 1 GiB memory
