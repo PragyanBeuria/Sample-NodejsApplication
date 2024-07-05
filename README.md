@@ -1,13 +1,13 @@
 Sample-NodejsApplication
 
 ###Step -1:
-
 Sample nodejs application
-.install node js 
-.node --version
-.npm --version
-.npm init -y
-.check app by command : node myapp.js
+
+   .install node js 
+   .node --version
+   .npm --version
+   .npm init -y
+   .check app by command : node myapp.js
 
 ####step-2
 
