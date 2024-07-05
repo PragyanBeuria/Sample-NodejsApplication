@@ -16,9 +16,10 @@ Sample nodejs application
 
 ####step-2
 
-    .create a container resustry on azure cloud via mannually or usinga azure powercell command.
+ a container resustry on azure cloud via mannually or usinga azure powercell command.
+
     
-     .create a dockerfile .
+create a dockerfile .
 
 ####step-3
 
@@ -27,6 +28,8 @@ go to azure devops
 create organisation
 
 make project and provide option of public and private.here is public.
+
+created agent pool -self hosted agent
 
 extract code from github to azure repo or you can access from github itslf.
 
